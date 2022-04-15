@@ -1,0 +1,12 @@
+#bell{
+    src: url(/src/assets/bell.png);
+}
+#nav{
+     background-color: rgb(44, 41, 41);
+     color: white;
+ }
+
+ button{
+     color: white;
+ }
+
