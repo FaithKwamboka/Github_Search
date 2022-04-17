@@ -1,0 +1,68 @@
+.landing {
+    background-image: url(../../assets/1567683.webp); 
+}
+
+#land{
+    padding-top: 100px;
+    color: white;   
+}
+
+#land h1{
+    color: pink;
+}
+
+.cont{
+    padding-left: 380px;
+    padding-right: 400px;
+    text-align: center;
+}
+
+.cont h5{
+    padding-left: -50px;
+    padding-right: -50px;
+    text-align: center;
+}
+
+.fm{
+    padding-left: 480px;
+    padding-right: 480px;  
+}
+
+.fm button {
+    color: white;
+    font-weight: bold;
+}
+
+#profile {
+    color: black;
+    align-items: center;
+    align-content: center;
+    font-weight: bolder;
+    font-style:unset;
+}
+
+#profile h4 {
+    color: pink;
+}
+
+#profile img {
+    float: left;
+    margin-left: 150px;
+    margin-right: 20px;
+}
+
+.rep{
+    margin-right: 5px;
+}
+
+.container button {
+    /* margin-bottom: 20px; */
+    background-color: lightblue;
+    color: black;
+}
+
+.card-header {
+    background-color: lightblue;
+}
+
+

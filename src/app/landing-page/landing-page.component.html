@@ -1,0 +1,77 @@
+<div class="landing">
+  <div id="land">
+    <div class="cont">
+      <h1>
+        Github
+        <img src="../../assets/github_.png" height="50px" width="50px" /> Search
+      </h1>
+      <br />
+      <h5>
+        Github Search enables a user to search for a GitHub user and see their
+        profiles as well as repositories
+      </h5>
+      <br />
+
+      <h3>Search for a GitHub User</h3>
+      <br />
+    </div>
+    
+    <form class="d-flex mb-5 fm">
+      <input
+        name="username"
+        [(ngModel)]="username"
+        class="form-control me-2"
+        type="search"
+        placeholder="Input username..."
+        aria-label="Search"
+      />
+      <button
+        (click)="findUser()"
+        class="btn btn-outline-success"
+        type="submit"
+        mr-4
+      >
+        Search
+      </button>
+    </form>
+  </div>
+<div class="container prof">
+  <div class="row">
+    <div *ngIf="user" id="profile">
+      <img src="{{ user.avatar_url }}" alt="" height="280px" width="450px" />
+      <br /> <br>
+      <h4><b>{{ user.name }}</b></h4>
+      <h5>Followers: {{ user.followers }}</h5>
+      <h5>Following: {{ user.following }}</h5><br>
+      <h4><b>Bio</b></h4>
+      <h5>{{ user.bio }}</h5>
+      <br />
+    </div>
+  </div>
+</div><br>
+
+<h3 class="text-center text- pink" >Repositories</h3>
+  <div class="container" style="text-align: center;" id="info">
+    <div class="row" >
+        <div class="col-md-4" *ngFor="let myrepo of repo" appHighlight>
+            <div class="card mt-3">
+              <p appHighlightDirective class="card-header"><b>{{ myrepo.name }}</b></p><br>
+              <p class="card-text">{{ myrepo.description }}</p>
+              <p class="card-text">{{ myrepo.language }}</p>
+              <p class="card-text">Created on : <b>{{ myrepo.created_at |date }}</b></p>
+              <a class="card-footer" href="{{ myrepo.html_url }}"
+                ><button>Open in GitHub</button></a
+              >
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+ 
